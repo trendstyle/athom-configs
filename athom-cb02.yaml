@@ -1,6 +1,6 @@
 substitutions:
   name: "ATH-inline-smartswitch"
-  project_name: "Automatic-home-inline-smartwitch"
+  project_name: "Automatic home.inline smartwitch"
   project_version: "1.1"
   relay_restore_mode: RESTORE_DEFAULT_OFF
 
