@@ -1,17 +1,17 @@
 substitutions:
-  device_name: "athom-2gang-switch"
-  project_name: "Athom Technology.2 Gang Switch"
+  name: "ATH-inline-smartswitch"
+  project_name: "Automatic home.2gang smartwitch"
   project_version: "1.1"
-  light1_restore_mode: RESTORE_DEFAULT_OFF
-  light2_restore_mode: RESTORE_DEFAULT_OFF
+  relay_restore_mode: RESTORE_DEFAULT_OFF
 
 esphome:
-  name: "${device_name}"
-  friendly_name: ""
-  name_add_mac_suffix: true
+  name: "${name}"
+  friendly_name: "${name}"
+  name_add_mac_suffix: false
   project:
     name: "${project_name}"
     version: "${project_version}"
+
 
 esp8266:
   board: esp8285
@@ -38,8 +38,7 @@ wifi:
 
 captive_portal:
 
-dashboard_import:
-  package_import_url: github://athom-tech/athom-configs/athom-sw02.yaml
+dashboard_import: trendstyleathom-tech/athom-configs/athom-sw02.yaml
 
 binary_sensor:
   - platform: status
